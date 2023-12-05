@@ -1,0 +1,34 @@
+<body>
+  <div data-controller="resource" data-resource-toggle-class="hidden">
+    <div id="view1" data-resource-target="index">
+      <div>
+        <input class="hidden" type="number" data-resource-target="input1" data-action="keypress->resource#validate">
+        <span data-resource-target="unit1"></span>
+      </div>
+      <div>
+        <select name="name" data-resource-target="select1" data-action="resource#select">
+        </select>
+      </div>
+      <button class="hidden" data-resource-target="btn1" data-action="resource#addAndHide">Ingresar</button>
+    </div>
+    <div id="view2" class="hidden" data-resource-target="table">
+      <div id="creation-panel">
+        <select name="name" data-resource-target="select2" data-action="resource#select2">
+        </select>
+        <input type="number" data-resource-target="input2" data-action="keypress->resource#validate">
+        <span data-resource-target="unit2"></span>
+        <button data-resource-target="btn2" data-action="resource#addAndClear">Ingresar</button>
+      </div>
+      <table>
+        <thead>
+          <th>Recurso</th>
+          <th>Cantidad</th>
+          <th>Fecha Ingreso</th>
+          <th>Acciones</th>
+        </thead>
+        <tbody data-resource-target="tableData">
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>

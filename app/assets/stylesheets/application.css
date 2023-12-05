@@ -13,3 +13,45 @@
  *= require_tree .
  *= require_self
  */
+
+.hidden {
+  display: none !important;
+}
+
+#view1 {
+  width: 300px;
+  height: 120px;
+  position: absolute;
+  top: calc(50vh - 60px);
+  left: calc(50vw - 150px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#view1 div {
+  margin-bottom: 1rem;
+}
+
+#view2 {
+  width: 800px;
+  height: 90vh;
+  position: absolute;
+  top: 5vh;
+  left: calc(50vw - 400px);
+}
+
+#creation-panel {
+  display: flex;
+  justify-content: space-around;
+}
+
+table {
+  width: 100%;
+  margin: 2rem auto;
+}
+
+td {
+  text-align: center;
+}
