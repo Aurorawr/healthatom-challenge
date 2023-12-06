@@ -32,6 +32,20 @@
 
 #view1 div {
   margin-bottom: 1rem;
+  width: 200px;
+  display: flex;
+}
+
+#view1 > div > input, #view1 > div > select {
+  flex-grow: 1;
+}
+
+#view1 div span {
+  margin-left: 1rem;
+}
+
+#view1 div:last-child {
+  justify-content: right;
 }
 
 #view2 {
@@ -52,6 +66,13 @@ table {
   margin: 2rem auto;
 }
 
+th {
+  padding: 1rem;
+  background-color: gray;
+  color: white;
+}
+
 td {
   text-align: center;
+  border: 1px solid gray;
 }
